@@ -1,17 +1,14 @@
 # CyclicBarrier
 
 ###  1、类说明：
-
-一个同步辅助类，它允许一组线程互相等待，直到到达某个公共屏障点 (common barrier point)。在涉及一组固定大小的线程的程序中，这些线程必须不时地互相等待，此时 CyclicBarrier 很有用。因为该 barrier 在释放等待线程后可以重用，所以称它为循环 的 barrier。
+一个同步辅助类，它允许一组线程互相等待，直到到达某个公共屏障点 (common barrier point)。
+在涉及一组固定大小的线程的程序中，这些线程必须不时地互相等待，此时 CyclicBarrier 很有用。
+因为该 barrier 在释放等待线程后可以重用，所以称它为循环 的 barrier。
 
 ### 2、使用场景：
-
 需要所有的子任务都完成时，才执行主任务，这个时候就可以选择使用CyclicBarrier。
 
-
-
-### 3、常用方法： 
-
+### 3、常用方法：
 ### await
 
 ```
@@ -19,8 +16,6 @@ public int await()
           throws InterruptedException,
                  BrokenBarrierException
 ```
-
-
 
 ### 4、练习例子
 
