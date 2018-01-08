@@ -1,0 +1,7 @@
+HashMap和Hashtable的区别
+HashMap是非线程安全的，Hashtable是线程安全的。
+
+HashMap的键值都可以为null，Hashtable的键值都不可以为null值。
+
+HashMap继承自AbstractMap类，Hashtable继承自Dictionary类。
+ps : Properties类继承自Hashtable类。
