@@ -35,6 +35,8 @@ MongoDB的特点
 分布式
 zookeeper的用途
 dubbo的用途以及优点
+注册中心 服务发现 负载均衡
+
 dubbo的实现原理
 
 数据结构和算法
