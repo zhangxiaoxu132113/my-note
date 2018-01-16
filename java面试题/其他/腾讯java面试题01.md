@@ -2,12 +2,16 @@
 
 1 什么是XSS攻击？
 
-XSS攻击：跨站脚本攻击(Cross Site Scripting)，为不和层叠样式表(Cascading Style Sheets, CSS)的缩写混淆。故将跨站脚本攻击缩写为XSS。XSS是一种经常出现在web应用中的计算机安全漏洞，它允许恶意web用户将代码植入到提供给其它用户使用的页面中。比如这些代码包括HTML代码和客户端脚本。攻击者利用XSS漏洞旁路掉访问控制——例如同源策略(same origin policy)。这种类型的漏洞由于被骇客用来编写危害性更大的phishing攻击而变得广为人知。对于跨站脚本攻击，黑客界共识是：跨站脚本攻击是新型的“缓冲区溢出攻击“，而JavaScript是新型的“ShellCode”。
+XSS攻击：跨站脚本攻击(Cross Site Scripting)，为不和层叠样式表(Cascading Style Sheets, CSS)的缩写混淆。
+故将跨站脚本攻击缩写为XSS。XSS是一种经常出现在web应用中的计算机安全漏洞，它允许恶意web用户将代码植入到提供给其它用户使用的页面中。
+比如这些代码包括HTML代码和客户端脚本。攻击者利用XSS漏洞旁路掉访问控制——例如同源策略(same origin policy)。
+这种类型的漏洞由于被骇客用来编写危害性更大的phishing攻击而变得广为人知。
+对于跨站脚本攻击，黑客界共识是：跨站脚本攻击是新型的“缓冲区溢出攻击“，而JavaScript是新型的“ShellCode”。
 
 
 
 2 -XX:ThreadStackSize 表示什么意思？
-
+线程本地内存大小，一般为1M.
 
 
 3 http1.0 与1.1的区别
@@ -181,17 +185,9 @@ HTTP1.1增加了OPTIONS, PUT, DELETE, TRACE, CONNECT这些Request方法.
 
 
 Status code
-
-
-
-  HTTP1.1 增加的新的status code：
-
-
-
+HTTP1.1 增加的新的status code：
 (HTTP1.0没有定义任何具体的1xx status code, HTTP1.1有2个)
-
 100 Continue
-
 101 Switching Protocols
 
 
@@ -253,10 +249,7 @@ Status code
 
 
 Content Negotiation
-
-
-
-    HTTP1.1增加了Content Negotiation，分为Server-driven Negotiation，Agent-driven Negotiation和Transparent Negotiation三种。
+HTTP1.1增加了Content Negotiation，分为Server-driven Negotiation，Agent-driven Negotiation和Transparent Negotiation三种。
 
 
 
@@ -269,10 +262,8 @@ Cache (缓存)
 HTTP1.1(RFC2616)详细展开地描述了Cache机制，详见13节。
 
 
-
 4 jvm结构（年轻代，年老代，持久代）及 eden与survivor的比例
-
-      eden ：survivor=8:1
+eden ：survivor=8:1
 
 面试官：那你先讲讲它的内存模型吧
 
