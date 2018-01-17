@@ -82,4 +82,3 @@ ThreadPoolExecutor.DiscardOldestPolicy():
 当线程池中的数量等于最大线程数时,抛弃线程池中工作队列头部的任务(即等待时间最久的任务)，并执行新传入的任务。
 
 下面的链接讲述了线程池的拒绝策略:http://blog.csdn.net/lfdfhl/article/details/40739093
-
