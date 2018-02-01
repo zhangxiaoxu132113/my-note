@@ -14,7 +14,7 @@
 
 ### 二，属性占位符
 
-　　当**application.properties**里的值被使用时，它们会被存在的Environment过滤，所以你能够引用先前定义的值（比如，系统属性）。
+当**application.properties**里的值被使用时，它们会被存在的Environment过滤，所以你能够引用先前定义的值（比如，系统属性）。
 
 ```properties
 roncoo.name=www.roncoo.com
